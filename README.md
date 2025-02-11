@@ -4,7 +4,7 @@
 
 A lightweight DNS lookup API built with Flask and dnspython, providing DNS record querying capabilities. Supports multiple record types with rate-limited requests.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTheBiemGamer%2FDnsLookup)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTheBiemGamer%2FDNSLookupAPI)
 
 ### Features:
 - Web interface with domain input and record type selector
@@ -23,8 +23,8 @@ A lightweight DNS lookup API built with Flask and dnspython, providing DNS recor
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/TheBiemGamer/DNSLookup.git
-cd DNSLookup
+git clone https://github.com/TheBiemGamer/DNSLookupAPI.git
+cd DNSLookupAPI
 ```
 
 ### 2. Docker Setup (Recommended)
@@ -41,13 +41,13 @@ pip install -r requirements.txt
 
 Run with Flask (development):
 ```bash
-cd dnslookup
+cd dnslookupapi
 flask run 
 ```
 
 Or with Waitress (production-ready):
 ```bash
-waitress-serve dnslookup.app:app
+waitress-serve dnslookupapi.app:app
 ```
 
 ---
