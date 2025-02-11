@@ -1,4 +1,4 @@
 {
-    "builds": [{"src": "dnslookup/app.py", "use": "@vercel/python"}],
-    "routes": [{"src": "/(.*)", "dest": "dnslookup/app.py"}]
+    "builds": [{"src": "dnslookupapi/app.py", "use": "@vercel/python"}],
+    "routes": [{"src": "/(.*)", "dest": "dnslookupapi/app.py"}]
 }

@@ -13,4 +13,4 @@ COPY . /app
 
 EXPOSE 5000
 
-CMD ["waitress-serve", "--host=0.0.0.0", "--port=5000", "dnslookup.app:app"]
+CMD ["waitress-serve", "--host=0.0.0.0", "--port=5000", "dnslookupapi.app:app"]
