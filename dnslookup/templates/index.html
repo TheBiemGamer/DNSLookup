@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNS Lookup</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <i
+      class="fas fa-adjust theme-switcher"
+      title="Toggle Theme"
+      onclick="toggleTheme()"
+    ></i>
+    <div class="container">
+      <h1>DNS Lookup</h1>
+      <div class="form-group">
+        <input
+          type="text"
+          id="domain"
+          placeholder="Enter domain (e.g., example.com)"
+          autofocus
+        />
+        <select id="recordType">
+          <option value="A">A Record</option>
+          <option value="AAAA">AAAA Record</option>
+          <option value="MX">MX Record</option>
+          <option value="TXT">TXT Record</option>
+          <option value="CNAME">CNAME Record</option>
+          <option value="NS">NS Record</option>
+          <option value="SOA">SOA Record</option>
+        </select>
+      </div>
+      <button onclick="fetchDNS()">Lookup DNS</button>
+      <div class="loading" id="loading">
+        <i class="fas fa-spinner"></i> Fetching records...
+      </div>
+      <div class="result" id="result"></div>
+      <footer>
+        <a
+          href="https://github.com/TheBiemGamer/DnsLookup"
+          target="_blank"
+          title="Source Code"
+        >
+          <i class="fa-brands fa-github icon"></i>
+        </a>
+      </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
