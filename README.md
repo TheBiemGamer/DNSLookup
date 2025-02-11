@@ -2,7 +2,7 @@
 
 <img src="/assets/DnsLookup.png" alt="DNS Lookup API" width="500">
 
-A lightweight DNS lookup API built with Flask and dnspython, providing DNS record querying capabilities. Supports multiple record types with rate-limited requests.
+A DNS lookup API built with Flask and dnspython. Supports multiple record types with rate-limited requests.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTheBiemGamer%2FDNSLookupAPI)
 
