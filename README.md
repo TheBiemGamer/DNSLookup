@@ -134,7 +134,3 @@ MIT License - See [LICENSE](LICENSE)
 ## Author
 
 - [TheBiemGamer](https://github.com/TheBiemGamer)
-
----
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TheBiemGamer/DNSLookup)
